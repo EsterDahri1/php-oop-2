@@ -11,17 +11,15 @@ Immaginare quali sono le classi necessarie per creare uno shop online con le seg
 class petProducts
 {
     public $image;
-    public $vote;
     public $name;
     public $category;
     public $price;
     public $type;
 
     # construct function
-    function __construct($_image, $_vote, $_name, $_category, $_price, $_type)
+    function __construct($_image, $_name, $_category, $_price, $_type)
     {
         $this->image = $_image;
-        $this->vote = $_vote;
         $this->name = $_name;
         $this->category = $_category;
         $this->price = $_price;
@@ -32,11 +30,6 @@ class petProducts
     public function getImage()
     {
         return $this->image;
-    }
-
-    public function getVote()
-    {
-        return $this->vote;
     }
 
     public function getName()
