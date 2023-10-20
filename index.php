@@ -8,47 +8,15 @@ Immaginare quali sono le classi necessarie per creare uno shop online con le seg
 * organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati. 
 */
 
-class petProducts
-{
-    public $image;
-    public $name;
-    public $category;
-    public $price;
-    public $type;
 
-    # construct function
-    function __construct($_image, $_name, $_category, $_price, $_type)
-    {
-        $this->image = $_image;
-        $this->name = $_name;
-        $this->category = $_category;
-        $this->price = $_price;
-        $this->type = $_type;
-    }
 
-    #Get functions
-    public function getImage()
-    {
-        return $this->image;
-    }
 
-    public function getName()
-    {
-        return $this->name;
-    }
 
-    public function getCategory()
-    {
-        return $this->category;
-    }
+#Dogs
+$dogBites = new petProducts('','Wolf of Wilderness Crocchette per cani', 'fa-solid fa-dog', '€ 72,99', 'food');
+$dogBed = new petProducts('', 'Basic Bed', 'fa-solid fa-dog', '€ 15,49', 'Dog/s Bed');
+$dogToy = new petProducts('', 'TIAKI palla meteorite', 'fa-solid fa-dog', '€ 5,99', 'toys');
+$dogDoor = new petProducts('', 'Porta basculante', 'fa-solid fa-dog', '€ 70,99', 'door');
 
-    public function getPrice()
-    {
-        return $this->price;
-    }
 
-    public function getType()
-    {
-        return $this->type;
-    }
-}
+#Cats
