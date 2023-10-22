@@ -2,10 +2,10 @@
 class Food extends Products
 {
     public $type = 'Food';
-    public $weight;
-    public $ingredients;
+    protected $weight;
+    protected $ingredients;
 
-    function __construct($_name, $_price, $_image, Categories $Categories, $_weight, $_ingredients)
+    function __construct($_image, $_name, $_price, Categories $Categories, $_weight, $_ingredients)
     {
         parent::__construct($_image, $_name, $_price, $Categories);
         $this->setWeight($_weight);

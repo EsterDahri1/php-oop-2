@@ -2,10 +2,10 @@
 class Accessory extends Products
 {
     public $type = 'Accessory';
-    public $materials;
-    public $colour;
+    protected $materials;
+    protected $colour;
 
-    function __construct($_name, $_price, $_image, Categories $Categories, $_materials, $_colour)
+    function __construct($_image, $_name, $_price, Categories $Categories, $_materials, $_colour)
     {
         parent::__construct($_image, $_name, $_price, $Categories);
         $this->materials = $_materials;

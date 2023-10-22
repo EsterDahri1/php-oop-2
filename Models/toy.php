@@ -2,11 +2,11 @@
 class Toy extends Products
 {
     public $type = 'Toy';
-    public $materials;
-    public $colour;
-    public $weight;
+    protected $materials;
+    protected $colour;
+    protected $weight;
 
-    function __construct($_name, $_price, $_image, Categories $Categories, $_materials, $_colour, $_weight)
+    function __construct($_image, $_name, $_price, Categories $Categories, $_materials, $_colour, $_weight)
     {
         parent::__construct($_image, $_name, $_price, $Categories);
         $this->setMaterials($_materials);
