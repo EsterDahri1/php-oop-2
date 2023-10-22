@@ -76,7 +76,7 @@ class Categories
 
 class Food extends Products
 {
-    public $type = 'Cibo';
+    public $type = 'Food';
     public $weight;
     public $ingredients;
 
@@ -104,8 +104,30 @@ class Bed extends Products
 
 class Toy extends Products
 {
+    public $type = 'Toy';
+    public $materials;
+    public $colour;
+    public $weight;
+
+    function __construct($_name, $_price, $_image, Categories $Categories, $_materials, $_colour, $_weight)
+    {
+        parent::__construct($_image, $_name, $_price, $Categories);
+        $this->materials = $_materials;
+        $this->colour = $_colour;
+        $this->weight = $_weight;
+    }
 };
 
 class Accessory extends Products
 {
+    public $type = 'Accessory';
+    public $materials;
+    public $colour;
+
+    function __construct($_name, $_price, $_image, Categories $Categories, $_materials, $_colour)
+    {
+        parent::__construct($_image, $_name, $_price, $Categories);
+        $this->materials = $_materials;
+        $this->colour = $_colour;
+    }
 };
