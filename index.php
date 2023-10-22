@@ -36,24 +36,27 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
             <i class="pe-5 fa-solid fa-cart-shopping text-success fa-xl"></i>
         </div>
     </header>
-    <main>
-        <nav class="navbar navbar-expand-sm navbar-light bg-success">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-4">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Dog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Cat</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-success">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav m-auto mt-2 mt-lg-0 fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Dog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Cat</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <main>
+
+
+
 
     </main>
     <footer class="mt-4 p-2 bg-light text-center h-70">
