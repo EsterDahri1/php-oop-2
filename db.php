@@ -12,7 +12,13 @@ $food = [
     new Food('', 'Nutro Wholesome Essentials', '$ 23.59', new Categories('cat'), '5 lbs', 'Chicken and brown rice'),
 ];
 
-$bed = [];
+$bed = [
+    new Bed('', 'Otis & Claude', '$ 35.99', new Categories('dog'), 'Hi-Tech Cashmere', 'Brown'),
+    new Bed('', 'Pet Gear Bolster Pad', '$ 22.09', new Categories('dog'), 'Poliester', 'Black'),
+    new Bed('', 'Aspen Pet Antimicrobial Deluxe Pillow', '$ 37.59', new Categories('dog'), 'Faux suede and micro terry cover', 'Caramel/Stripe Chenille'),
+    new Bed('', 'PetMate Round Deluxe Cuddle Cup', '$ 24.99', new Categories('dog'), 'Micro Suede Fabrics With Plush Micro Terry ', 'Cian'),
+    new Bed('', 'SnuggleSafe Microwave Heat Pad', '$ 32.99', new Categories('cat'), '', 'Beige and Brown'),
+];
 
 $toy = [];
 
