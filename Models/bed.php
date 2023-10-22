@@ -8,8 +8,8 @@ class Bed extends Products
     function __construct($_image, $_name, $_price, Categories $Categories, $_materials, $_colour)
     {
         parent::__construct($_image, $_name, $_price, $Categories);
-        $this->materials = $_materials;
-        $this->colour = $_colour;
+        $this->setMaterials($_materials);
+        $this->setColour($_colour);
     }
 
     #setters
