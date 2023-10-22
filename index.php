@@ -76,6 +76,16 @@ class Categories
 
 class Food extends Products
 {
+    public $type = 'Cibo';
+    public $weight;
+    public $ingredients;
+
+    function __construct($_name, $_price, $_image, Categories $Categories, $_weight, $_ingredients)
+    {
+        parent::__construct($_image, $_name, $_price, $Categories);
+        $this->weight = $_weight;
+        $this->ingredients = $_ingredients;
+    }
 };
 
 class Bed extends Products
