@@ -5,6 +5,6 @@
         <div><strong>Price:</strong><?php $product->getPrice() ?></div>
         <div><strong>For:</strong><?php $product->getCategories()->getAnimal() ?></div>
         <div><strong>Made of:</strong><?php $product->getMaterials() ?></div>
-        <div></div>
+        <div><strong>Colour:</strong> <?php $product->getColour() ?></div>
     </div>
 </div>
