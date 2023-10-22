@@ -11,4 +11,26 @@ class Bed extends Products
         $this->materials = $_materials;
         $this->colour = $_colour;
     }
+
+    #setters
+    function setMaterials($_materials)
+    {
+        $this->materials = $_materials;
+    }
+
+    function setColour($_colour)
+    {
+        $this->colour = $_colour;
+    }
+
+    #getters
+    function getMaterials()
+    {
+        return $this->materials;
+    }
+
+    function getColour()
+    {
+        return $this->colour;
+    }
 };
