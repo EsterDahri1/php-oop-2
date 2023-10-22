@@ -28,10 +28,10 @@
                         <a class="nav-link active text-white" href="index.php" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="">Dog</a>
+                        <a class="nav-link text-white" href="dog.php">Dog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Cat</a>
+                        <a class="nav-link text-white" href="cat.php">Cat</a>
                     </li>
                 </ul>
             </div>
