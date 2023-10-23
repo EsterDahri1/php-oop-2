@@ -15,6 +15,7 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 define('ROOT', __DIR__);
 define('DS', DIRECTORY_SEPARATOR);
 
+require_once ROOT . DS . 'traits' . DS . 'traits.php';
 require_once ROOT . DS . 'Models' . DS . 'categories.php';
 require_once ROOT . DS . 'Models' . DS . 'products.php';
 require_once ROOT . DS . 'Models' . DS . 'food.php';
