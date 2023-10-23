@@ -1,4 +1,4 @@
-<h3>Bed:</h3>
+<h3 class="pt-3 text-white">Bed:</h3>
 <div class="row row-cols-3 g-5">
     <?php foreach ($products as $product) : ?>
         <?php if ($product->getCategories()->getPet() == 'dog') : ?>
