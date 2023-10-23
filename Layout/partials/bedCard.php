@@ -1,10 +1,10 @@
 <div class="card">
-    <img class="card-img-top" src="<?php $product->getImage() ?>" alt="Title">
+    <img class="card-img-top" src="<?php echo $product->getImage() ?>" alt="Title">
     <div class="card-body">
-        <div><strong>Product name:</strong><?php $product->getName() ?></div>
-        <div><strong>Price:</strong><?php $product->getPrice() ?></div>
-        <div><strong>For:</strong><?php $product->getCategories()->getAnimal() ?></div>
-        <div><strong>Made of:</strong><?php $product->getMaterials() ?></div>
-        <div><strong>Colour:</strong><?php $product->getColour() ?></div>
+        <div><strong>Product name:</strong><?php echo $product->getName() ?></div>
+        <div><strong>Price:</strong><?php echo $product->getPrice() ?></div>
+        <div><strong>For:</strong><?php echo $product->getCategories()->getAnimal() ?></div>
+        <div><strong>Made of:</strong><?php echo $product->getMaterials() ?></div>
+        <div><strong>Colour:</strong><?php echo $product->getColour() ?></div>
     </div>
 </div>

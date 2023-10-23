@@ -5,7 +5,7 @@ class Food extends Products
     protected $weight;
     protected $ingredients;
 
-    function __construct($_image, $_name, $_price, Categories $Categories, $_weight, $_ingredients)
+    public function __construct($_image, $_name, $_price, Categories $Categories, $_weight, $_ingredients)
     {
         parent::__construct($_image, $_name, $_price, $Categories);
         $this->setWeight($_weight);
@@ -13,23 +13,23 @@ class Food extends Products
     }
 
     #setters
-    function setWeight($_weight)
+    public function setWeight($_weight)
     {
         $this->weight = $_weight;
     }
 
-    function setIngredients($_ingredients)
+    public function setIngredients($_ingredients)
     {
         $this->ingredients = $_ingredients;
     }
 
     #getters
-    function getWeight()
+    public function getWeight()
     {
         return $this->weight;
     }
 
-    function getIngredients()
+    public function getIngredients()
     {
         return $this->ingredients;
     }
