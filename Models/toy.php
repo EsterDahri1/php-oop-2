@@ -1,6 +1,8 @@
 <?php
 class Toy extends Products
 {
+    use Materials;
+    use Colour;
     public $type = 'Toy';
     protected $materials;
     protected $colour;
@@ -10,27 +12,5 @@ class Toy extends Products
         parent::__construct($_image, $_name, $_price, $Categories);
         $this->setMaterials($_materials);
         $this->setColour($_colour);
-    }
-
-    #setters
-    public function setMaterials($_materials)
-    {
-        $this->materials = $_materials;
-    }
-
-    public function setColour($_colour)
-    {
-        $this->colour = $_colour;
-    }
-
-    #getters
-    public function getMaterials()
-    {
-        return $this->materials;
-    }
-
-    public function getColour()
-    {
-        return $this->colour;
     }
 };
